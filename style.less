@@ -1,0 +1,109 @@
+/*
+Theme Name: Origami Paper
+Theme URI: http://siteorigin.com/theme/origami/
+Description: Origami Paper is an Origami child theme. It takes Origami, which is a clean simple theme, and transforms it into a richly detailed theme with a warm wooden background and a host of small details to give your site a high quality feel. Just like Origami, this theme integrates nicely with our Page Builder. This means you can use Origami Paper for antyhing from a simple landing page to a fully functional business theme.
+Author: SiteOrigin
+Author URI: http://siteorigin.com
+Template: origami
+Version: 1.0.1
+Tags: brown, light, yellow, one-column, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, post-formats, theme-options, threaded-comments, translation-ready, photoblogging
+*/
+
+@import "mixins";
+
+#page-container {
+    position: relative;
+
+	.box-shadow(~"0 2px 2px rgba(0,0,0,0.1)");
+	.rounded(8px);
+
+    border: 1px solid rgba(0,0,0,0.05);
+    padding-bottom: 3%;
+	background: #FAFAFA;
+
+	margin-top: 50px;
+}
+
+#origami-tape {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    width: 147px;
+    height: 28px;
+    margin-left: -72px;
+    background: url(./images/tape.png);
+}
+
+#menu ul {
+    border-color: #e1d8cf;
+	background: #f7f3ee url(./images/noise.png) repeat;
+    .box-shadow(~"0 1px 1px rgba(0,0,0,0.05)");
+}
+
+#menu ul li a {
+	color: #54514c;
+}
+
+.post .below-content {
+    border-top-color: #e1d8cf;
+    border-bottom-color: #dcd3c9;
+	background: #f7f3ee url(./images/noise.png) repeat;
+	.box-shadow(~"0 1px 1px rgba(0,0,0,0.05)");
+}
+
+#footer {
+    color: #F0F0F0;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+
+#footer a{
+    color: #FFFFFF;
+}
+
+#logo {
+	margin-bottom: 40px;
+}
+
+#logo h1,
+h1.entry-title,
+h1.archive-title {
+	font-family: Lato;
+}
+
+h1.entry-title,
+h1.archive-title {
+	font-size: 30px;
+	color: #333;
+}
+
+#origami-top-menu {
+	background: #f9f9f9;
+	margin-bottom: 60px;
+	.box-shadow(~"0 3px 4px rgba(0,0,0,0.15)");
+	border-bottom: 1px solid #FFF;
+
+	padding: 16px 0 15px 0;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			line-height: 1;
+			color: #555;
+			font-size: 12px;
+			font-weight: 500;
+			text-decoration: none;
+		}
+	}
+}
+
+.post .content {
+	color: #666666;
+	font-size: 13px;
+}
