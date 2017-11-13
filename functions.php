@@ -19,7 +19,7 @@ function origami_paper_filter_background($background){
 add_filter('origami_custom_background', 'origami_paper_filter_background');
 
 function origami_paper_render_tape(){
-	?><div id="origami-tape"></div><?php
+
 }
 add_action('origami_top_page_container', 'origami_paper_render_tape');
 
@@ -27,7 +27,7 @@ function origami_paper_top_menu(){
 	wp_nav_menu(array(
 		'theme_location' => 'paper-top-menu',
 		'menu_id' => 'origami-top-menu',
-		'depth' => 1,d
+		'depth' => 1,
 		'fallback_cb' => false,
 	));
 }
