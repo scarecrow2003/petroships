@@ -143,3 +143,6 @@ h1.archive-title {
   margin: 0 auto;
   padding: 0 10px;
 }
+.owl-carousel-item-imgoverlay {
+  display: none;
+}
